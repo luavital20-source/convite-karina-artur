@@ -6,7 +6,7 @@
 <title>Karina &amp; Artur · Convite de Casamento</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Mr+De+Haviland&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   /* ============================================================
      PALETA — Karina & Artur (Azul Serenity)
@@ -34,7 +34,7 @@
   }
   body.locked{overflow:hidden;height:100vh}
 
-  .script{font-family:'Pinyon Script',cursive}
+  .script{font-family:'Mr De Haviland',cursive}
   .label{
     font-family:'Jost',sans-serif;font-weight:400;
     text-transform:uppercase;letter-spacing:.32em;
@@ -72,7 +72,7 @@
 
   .splash-pre{margin-bottom:18px}
   .splash-names{
-    font-size:3.4rem;line-height:1;color:var(--azul-profundo);
+    font-size:3.9rem;line-height:1;color:var(--azul-profundo);
     margin:10px 0 4px;
   }
   .splash-sub{
@@ -117,7 +117,7 @@
     font-size:2.9rem;line-height:1;letter-spacing:-.04em;
     display:flex;align-items:center;
   }
-  .mono-amp{font-family:'Pinyon Script',cursive;font-size:1.9rem;margin:0 -.04em;transform:translateY(2px)}
+  .mono-amp{font-family:'Mr De Haviland',cursive;font-size:1.9rem;margin:0 -.04em;transform:translateY(2px)}
   .mono-leaf{position:absolute;top:-9px;width:30px;height:14px;color:var(--serenity)}
   .mono-name{
     margin-top:12px;font-family:'Jost',sans-serif;font-weight:400;
@@ -142,7 +142,7 @@
   .hero-corner.br{bottom:18px;right:18px;transform:scale(-1,-1)}
 
   .hero-pre{margin-bottom:14px}
-  .hero-names{font-size:4.2rem;line-height:.95;color:var(--azul-profundo);margin:6px 0}
+  .hero-names{font-size:4.9rem;line-height:.95;color:var(--azul-profundo);margin:6px 0}
   .hero-and{font-size:2.2rem;color:var(--serenity);display:block;margin:2px 0}
   .hero-verse{
     max-width:440px;margin:26px auto 0;font-style:italic;
@@ -233,7 +233,7 @@
 
   /* ---------- RODAPÉ ---------- */
   footer{background:var(--azul-profundo);color:#fff;text-align:center;padding:46px 24px}
-  .footer-names{font-family:'Pinyon Script',cursive;font-size:2.6rem;display:block}
+  .footer-names{font-family:'Mr De Haviland',cursive;font-size:3rem;display:block}
   .footer-date{font-family:'Jost',sans-serif;letter-spacing:.28em;text-transform:uppercase;font-size:.72rem;opacity:.85;margin-top:8px;display:block}
 
   /* ---------- WIDGET DE MÚSICA FIXO ---------- */
@@ -262,8 +262,8 @@
   @keyframes spin{to{transform:rotate(360deg)}}
 
   @media(max-width:480px){
-    .hero-names{font-size:3.2rem}
-    .splash-names{font-size:2.7rem}
+    .hero-names{font-size:3.7rem}
+    .splash-names{font-size:3.1rem}
     .cards{grid-template-columns:1fr}
     .dress-icons{gap:32px}
   }
@@ -406,6 +406,12 @@
         <p class="cval">Social fino</p>
       </div>
     </div>
+    <div class="btn-row">
+      <a class="btn-secondary todo" id="mapsLink" href="#" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 21s-7-6.5-7-11a7 7 0 0114 0c0 4.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        Ver localização
+      </a>
+    </div>
   </section>
 
   <!-- DRESS CODE -->
@@ -456,27 +462,6 @@
     </div>
   </section>
 
-  <!-- RSVP -->
-  <section class="block reveal" style="background:var(--azul-claro)">
-    <span class="label section-label">Confirmação</span>
-    <h3 class="section-title">Confirme sua presença</h3>
-    <div class="divider"></div>
-    <p class="section-text">
-      Ficaremos muito felizes em celebrar com você.
-      Por favor, confirme sua presença <span id="rsvp-prazo"></span>através do botão abaixo.
-    </p>
-    <div class="btn-row">
-      <a class="btn-primary todo" id="rsvpLink" href="#" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 6L9 17l-5-5"/></svg>
-        Confirmar presença
-      </a>
-      <a class="btn-secondary todo" id="mapsLink" href="#" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 21s-7-6.5-7-11a7 7 0 0114 0c0 4.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
-        Ver localização
-      </a>
-    </div>
-  </section>
-
   <!-- RODAPÉ -->
   <footer>
     <span class="footer-names">Karina &amp; Artur</span>
@@ -516,8 +501,7 @@ const CONFIG = {
   musicaTitulo:  "A Thousand Years · Christina Perri",
   linkPresentes: "",        // URL da lista de presentes
   linkMaps:      "https://maps.app.goo.gl/DDwLUxWVB6r7UvHR8",
-  linkRSVP:      "",        // URL de confirmação de presença
-  prazoRSVP:     ""         // ex.: "até 30 de Outubro" (opcional)
+  prazoRSVP:     ""         // (não usado)
 };
 
 /* ============================================================
@@ -548,11 +532,8 @@ const CONFIG = {
 
   // links (removem o aviso .todo quando preenchidos)
   setLink('giftLink', CONFIG.linkPresentes);
-  setLink('rsvpLink', CONFIG.linkRSVP);
   setLink('mapsLink', CONFIG.linkMaps);
 
-  // prazo RSVP
-  if(CONFIG.prazoRSVP){ document.getElementById('rsvp-prazo').textContent = CONFIG.prazoRSVP + " "; }
 
   // countdown note
   if(CONFIG.dataISO){ document.getElementById('cd-note').style.display = 'none'; }
